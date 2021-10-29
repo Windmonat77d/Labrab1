@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Лабораторная работа №1</title>
+	<!--<style>
+	.header{
+	border: 4px double gray;
+	text-align: center;
+	}
+	.Dectext{
+	border: 4px double red;
+	background: #ffe6ac;
+	text-align: center;
+	}
+	.block{
+	display: flex;}
+	.leftside{
+	border: 4px double red;
+	background: #ffe6ac;
+	float: left;
+	display: block;
+	}
+	.blacklist{
+	margin: 6px;
+	}
+	.form{
+	margin: 6px;
+	}
+	.centerside{
+	background: #ffe6ac;
+	border: 4px double red;
+	flex: 1;
+	display: flex;
+	}
+	.table {
+	margin: auto;
+	}
+	.rightside{
+	background: #d7c9c9;
+	border: 4px double red;
+	float: right;
+	display: flex;
+	}
+	.adtext{
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: 3px;
+	margin-right: 3px;
+	}
+	</style> -->
+</head>
+<body>
+	<table border="1" width="100%" cellpadding="10">
+	<tr>
+	<div class="header">
+		<th colspan="3" height="30"><h2>Лабораторная работа №1. Основы построения HTML-документов</h2></th>
+	</div>
+	</tr>
+	<tr>
+	<div class="Dectext">
+        <th colspan="3"><p><b><i>E=mc<sup>2</sup></i>,</b> где <b>E</b> - энергия объекта, <b>m</b> - его масса, <b>c</b> - скорость света в вакууме, равная 299 792 458 <i>м/с</i>.</p></th>
+	</div>
+	</tr>
+	<tr>
+	<div class="block">
+	<td width="255">
+	<div class="leftside">
+	<p>Выберите студента из списка ниже...</p>
+	<div class="blacklist">
+		<select size="1">
+            <option selected disabled>Выберите студента</option>
+            <option value="Белоусов Игорь Артурович">Белоусов Игорь Артурович</option>
+            <option value="Витко Владислав Александрович">Витко Владислав Александрович</option>
+            <option value="Давидов Ярослав Андреевич">Давидов Ярослав Андреевич</option>
+            <option value="Задорожный Виктор Русланович">Задорожный Виктор Русланович</option>
+            <option value="Зипунов Ярослав Владимирович">Зипунов Ярослав Владимирович</option>
+            <option value="Кухтин Дмитрий Вадимович">Кухтин Дмитрий Вадимович</option>
+            <option value="Ладоня Виталий Сергеевич">Ладоня Виталий Сергеевич"</option>
+            <option value="Ланев Владислав Константинович">Ланев Владислав Константинович</option>
+            <option value="Михайлова Анна Андреевна">Михайлова Анна Андреевна</option>
+            <option value="Могильный Андрей Егорович">Могильный Андрей Егорович</option>
+            <option value="Морской Сергей Андреевич">Морской Сергей Андреевич</option>
+            <option value="Нестеренко Максим Валентинович">Нестеренко Максим Валентинович</option>
+            <option value="Прудиус Владислав Эдуардович">Прудиус Владислав Эдуардович</option>
+            <option value="Соболь Олег Русланович">Соболь Олег Русланович</option>
+            <option value="Соколовский Сергей Олегович">Соколовский Сергей Олегович</option>
+            <option value="Ступаренко Роман Юрьевич">Ступаренко Роман Юрьевич</option>
+            <option value="Ткаченко Егор Андреевич">Ткаченко Егор Андреевич</option>
+		</select>
+	</div>
+	<br>
+	<div class="form">
+		<p">... или добавьте нового студента</p>
+        <form action="">
+            <div>
+                <span>Имя:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>
+                <input type="text">
+            </div>
+            <br>
+            <div>
+                <span>Фамилия:&nbsp</span>
+                <input type="text">
+            </div>
+            <br>
+            <div>
+                <span>Отчество:&nbsp</span>
+                <input type="text">
+            </div>
+                <br>
+			</form>
+		<form action="" align="center">
+            <input type="submit">
+        </form>
+	</td>	
+    </div>
+	</div>
+	<td>
+	<div class="centerside">
+	<div class="table" align="center">
+		<table border="1" cellpadding="7">
+        <caption align="top">Данные оглавления</caption>
+        <tr>
+            <th>Название страницы</th>
+            <th>Имя файла</th>
+        </tr>
+        <tr>
+            <td>Главная страница</td>
+            <td><a href="index.html">index.html</a></td>
+        </tr>
+        <tr>
+            <td>Относительная гиперссылка</td>
+            <td><a href="ad.html">ad.html</a></td>
+        </tr>
+        </table>
+	</div>	
+	</div>
+	</td>
+	<td width="185">
+	<div class="rightside">
+		<div class="adtext">
+			<a href="ad.html#here"><p align="center">ЗДЕСЬ МОГЛА БЫ БЫТЬ</p>
+			<p align="center">ВАША РЕКЛАМА</p></a>
+		</div>
+	</div>
+    </div>
+	</td>
+	</tr>
+	</table>
+</body>
+</html>
